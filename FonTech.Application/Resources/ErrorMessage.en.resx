@@ -1,0 +1,53 @@
+﻿<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="InternalServerError" xml:space="preserve">
+        <value>Internal server error</value>
+    </data>
+    <data name="ReportsNotFound" xml:space="preserve">
+        <value>Reports not found</value>
+    </data>
+    <data name="ReportNotFound" xml:space="preserve">
+        <value>Report not found</value>
+    </data>
+    <data name="ReportAlreadyExists" xml:space="preserve">
+        <value>Report already exists</value>
+    </data>
+    <data name="UserNotFound" xml:space="preserve">
+        <value>User not found</value>
+    </data>
+    <data name="PasswordNotEqualsPasswordConfirm" xml:space="preserve">
+        <value>Password not equals password confirm</value>
+    </data>
+    <data name="UserAlreadyExists" xml:space="preserve">
+        <value>User already exists</value>
+    </data>
+    <data name="PasswordIsWrong" xml:space="preserve">
+        <value>Password is wrong</value>
+    </data>
+    <data name="InvalidToken" xml:space="preserve">
+        <value>Invalid token</value>
+    </data>
+    <data name="InvalidClientRequest" xml:space="preserve">
+        <value>Invalid client request</value>
+    </data>
+    <data name="RoleAlreadyExists" xml:space="preserve">
+        <value>Role already exists</value>
+    </data>
+    <data name="RoleNotFound" xml:space="preserve">
+        <value>Role not found</value>
+    </data>
+    <data name="UserAlreadyExistsThisRole" xml:space="preserve">
+        <value>User already exists this role</value>
+    </data>
+</root>

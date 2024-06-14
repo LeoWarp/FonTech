@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="InternalServerError" xml:space="preserve">
+        <value>Внутренняя ошибка сервера</value>
+    </data>
+    <data name="ReportsNotFound" xml:space="preserve">
+        <value>Отчёты не найдены</value>
+    </data>
+    <data name="ReportNotFound" xml:space="preserve">
+        <value>Отчёт не найден</value>
+    </data>
+    <data name="ReportAlreadyExists" xml:space="preserve">
+        <value>Отчёт с таким названием уже есть</value>
+    </data>
+    <data name="UserNotFound" xml:space="preserve">
+        <value>Пользователь не найден</value>
+    </data>
+    <data name="PasswordNotEqualsPasswordConfirm" xml:space="preserve">
+        <value>Пароли не равны</value>
+    </data>
+    <data name="UserAlreadyExists" xml:space="preserve">
+        <value>Пользователь с такими данными уже существует</value>
+    </data>
+    <data name="PasswordIsWrong" xml:space="preserve">
+        <value>Неверный пароль</value>
+    </data>
+    <data name="InvalidToken" xml:space="preserve">
+        <value>Невалидный токен</value>
+    </data>
+    <data name="InvalidClientRequest" xml:space="preserve">
+        <value>Невалидный запрос клиента</value>
+    </data>
+    <data name="RoleAlreadyExists" xml:space="preserve">
+        <value>Роль уже существует</value>
+    </data>
+    <data name="RoleNotFound" xml:space="preserve">
+        <value>Роль не найдена</value>
+    </data>
+    <data name="UserAlreadyExistsThisRole" xml:space="preserve">
+        <value>Пользователь уже имеет такую роль</value>
+    </data>
+</root>

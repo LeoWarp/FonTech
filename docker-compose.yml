@@ -1,0 +1,26 @@
+﻿services:
+  fontech.api:
+    image: fontech.api
+    build:
+      context: .
+      dockerfile: FonTech.Api/Dockerfile
+  fontech.db:
+    image: postgres
+    container_name: fontechdb
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=FonTech
+    restart: always
+    ports:
+        - "5432:5432"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.ru
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    restart: always
+    ports:
+        - "5050:80"
+      

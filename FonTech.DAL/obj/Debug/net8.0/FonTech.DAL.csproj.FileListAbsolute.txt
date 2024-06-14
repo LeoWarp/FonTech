@@ -1,0 +1,15 @@
+D:\Программирование\Проекты\FonTech\FonTech.DAL\bin\Debug\net8.0\FonTech.DAL.deps.json
+D:\Программирование\Проекты\FonTech\FonTech.DAL\bin\Debug\net8.0\FonTech.DAL.dll
+D:\Программирование\Проекты\FonTech\FonTech.DAL\bin\Debug\net8.0\FonTech.DAL.pdb
+D:\Программирование\Проекты\FonTech\FonTech.DAL\bin\Debug\net8.0\FonTech.Domain.dll
+D:\Программирование\Проекты\FonTech\FonTech.DAL\bin\Debug\net8.0\FonTech.Domain.pdb
+D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.csproj.AssemblyReference.cache
+D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.AssemblyInfoInputs.cache
+D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.AssemblyInfo.cs
+D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.csproj.CoreCompileInputs.cache
+D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.csproj.CopyComplete
+D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.dll
+D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\refint\FonTech.DAL.dll
+D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.pdb
+D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\ref\FonTech.DAL.dll

@@ -1,0 +1,15 @@
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\bin\Debug\net8.0\FonTech.Consumer.deps.json
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\bin\Debug\net8.0\FonTech.Consumer.dll
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\bin\Debug\net8.0\FonTech.Consumer.pdb
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\bin\Debug\net8.0\FonTech.Domain.dll
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\bin\Debug\net8.0\FonTech.Domain.pdb
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\FonTech.Consumer.csproj.AssemblyReference.cache
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\FonTech.Consumer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\FonTech.Consumer.AssemblyInfoInputs.cache
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\FonTech.Consumer.AssemblyInfo.cs
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\FonTech.Consumer.csproj.CoreCompileInputs.cache
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\FonTech.Consumer.csproj.CopyComplete
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\FonTech.Consumer.dll
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\refint\FonTech.Consumer.dll
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\FonTech.Consumer.pdb
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\ref\FonTech.Consumer.dll

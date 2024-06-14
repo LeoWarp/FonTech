@@ -1,0 +1,12 @@
+D:\Программирование\Проекты\FonTech\FonTech.Domain\bin\Debug\net8.0\FonTech.Domain.deps.json
+D:\Программирование\Проекты\FonTech\FonTech.Domain\bin\Debug\net8.0\FonTech.Domain.dll
+D:\Программирование\Проекты\FonTech\FonTech.Domain\bin\Debug\net8.0\FonTech.Domain.pdb
+D:\Программирование\Проекты\FonTech\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Программирование\Проекты\FonTech\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.AssemblyInfoInputs.cache
+D:\Программирование\Проекты\FonTech\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.AssemblyInfo.cs
+D:\Программирование\Проекты\FonTech\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.csproj.CoreCompileInputs.cache
+D:\Программирование\Проекты\FonTech\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.dll
+D:\Программирование\Проекты\FonTech\FonTech.Domain\obj\Debug\net8.0\refint\FonTech.Domain.dll
+D:\Программирование\Проекты\FonTech\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.pdb
+D:\Программирование\Проекты\FonTech\FonTech.Domain\obj\Debug\net8.0\ref\FonTech.Domain.dll
+D:\Программирование\Проекты\FonTech\FonTech.Domain\obj\Debug\net8.0\FonTech.Domain.csproj.AssemblyReference.cache
