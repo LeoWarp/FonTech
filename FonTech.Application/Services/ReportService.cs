@@ -4,6 +4,7 @@ using FonTech.Domain.Dto;
 using FonTech.Domain.Dto.Report;
 using FonTech.Domain.Entity;
 using FonTech.Domain.Enum;
+using FonTech.Domain.Extensions;
 using FonTech.Domain.Interfaces.Repositories;
 using FonTech.Domain.Interfaces.Services;
 using FonTech.Domain.Interfaces.Validations;
@@ -11,6 +12,7 @@ using FonTech.Domain.Result;
 using FonTech.Domain.Settings;
 using FonTech.Producer.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Options;
 using Serilog;
 
@@ -23,12 +25,13 @@ public class ReportService : IReportService
     private readonly IReportValidator _reportValidator;
     private readonly IMessageProducer _messageProducer;
     private readonly IOptions<RabbitMqSettings> _rabbitMqOptions;
+    private readonly IDistributedCache _distributedCache;
     private readonly IMapper _mapper;
     private readonly ILogger _logger;
 
     public ReportService(IBaseRepository<Report> reportRepository, IBaseRepository<User> userRepository,
         ILogger logger, IReportValidator reportValidator, IMapper mapper, IMessageProducer messageProducer,
-        IOptions<RabbitMqSettings> rabbitMqOptions)
+        IOptions<RabbitMqSettings> rabbitMqOptions, IDistributedCache distributedCache)
     {
         _reportRepository = reportRepository;
         _logger = logger;
@@ -36,6 +39,7 @@ public class ReportService : IReportService
         _mapper = mapper;
         _messageProducer = messageProducer;
         _rabbitMqOptions = rabbitMqOptions;
+        _distributedCache = distributedCache;
         _userRepository = userRepository;
     }
 
@@ -107,6 +111,9 @@ public class ReportService : IReportService
                 ErrorCode = (int)ErrorCodes.ReportNotFound
             });
         }
+        
+        _distributedCache.SetObject($"Report_{id}", report);
+        
         return Task.FromResult(new BaseResult<ReportDto>()
         {
             Data = report
@@ -137,7 +144,7 @@ public class ReportService : IReportService
         await _reportRepository.CreateAsync(report);
         await _reportRepository.SaveChangesAsync();
         
-        _messageProducer.SendMessage(report, _rabbitMqOptions.Value.RoutingKey, _rabbitMqOptions.Value.ExchangeName);
+        // _messageProducer.SendMessage(report, _rabbitMqOptions.Value.RoutingKey, _rabbitMqOptions.Value.ExchangeName);
         
         return new BaseResult<ReportDto>()
         {

@@ -79,3 +79,12 @@ D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug
 D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\FonTech.Producer.dll
 D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\FonTech.Consumer.pdb
 D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\FonTech.Producer.pdb
+D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\Программирование\Проекты\FonTech\FonTech.Api\obj\Debug\net8.0\FonTech.Api.sourcelink.json
+D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\Prometheus.NetStandard.dll
+D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\Prometheus.AspNetCore.dll
