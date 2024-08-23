@@ -79,3 +79,6 @@ D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug
 D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\FonTech.Producer.dll
 D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\FonTech.Consumer.pdb
 D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\FonTech.Producer.pdb
+D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\MediatR.dll
+D:\Программирование\Проекты\FonTech\FonTech.Api\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\Программирование\Проекты\FonTech\FonTech.Api\obj\Debug\net8.0\FonTech.Api.sourcelink.json

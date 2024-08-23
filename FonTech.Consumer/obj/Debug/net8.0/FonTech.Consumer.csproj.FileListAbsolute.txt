@@ -13,3 +13,4 @@ D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\
 D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\refint\FonTech.Consumer.dll
 D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\FonTech.Consumer.pdb
 D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\ref\FonTech.Consumer.dll
+D:\Программирование\Проекты\FonTech\FonTech.Consumer\obj\Debug\net8.0\FonTech.Consumer.sourcelink.json

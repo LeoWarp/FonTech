@@ -13,3 +13,4 @@ D:\Программирование\Проекты\FonTech\FonTech.Producer\obj\
 D:\Программирование\Проекты\FonTech\FonTech.Producer\bin\Debug\net8.0\FonTech.Domain.dll
 D:\Программирование\Проекты\FonTech\FonTech.Producer\bin\Debug\net8.0\FonTech.Domain.pdb
 D:\Программирование\Проекты\FonTech\FonTech.Producer\obj\Debug\net8.0\FonTech.Producer.csproj.CopyComplete
+D:\Программирование\Проекты\FonTech\FonTech.Producer\obj\Debug\net8.0\FonTech.Producer.sourcelink.json

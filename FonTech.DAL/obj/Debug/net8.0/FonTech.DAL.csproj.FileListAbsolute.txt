@@ -13,3 +13,4 @@ D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug
 D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\refint\FonTech.DAL.dll
 D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.pdb
 D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\ref\FonTech.DAL.dll
+D:\Программирование\Проекты\FonTech\FonTech.DAL\obj\Debug\net8.0\FonTech.DAL.sourcelink.json

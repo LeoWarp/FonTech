@@ -25,3 +25,4 @@ D:\Программирование\Проекты\FonTech\FonTech.Application\o
 D:\Программирование\Проекты\FonTech\FonTech.Application\obj\Debug\net8.0\ref\FonTech.Application.dll
 D:\Программирование\Проекты\FonTech\FonTech.Application\bin\Debug\net8.0\FonTech.Producer.dll
 D:\Программирование\Проекты\FonTech\FonTech.Application\bin\Debug\net8.0\FonTech.Producer.pdb
+D:\Программирование\Проекты\FonTech\FonTech.Application\obj\Debug\net8.0\FonTech.Application.sourcelink.json

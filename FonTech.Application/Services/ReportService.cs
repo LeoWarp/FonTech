@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using FonTech.Application.Commands;
+using FonTech.Application.Queries;
 using FonTech.Application.Resources;
 using FonTech.Domain.Dto;
 using FonTech.Domain.Dto.Report;
@@ -10,6 +12,7 @@ using FonTech.Domain.Interfaces.Validations;
 using FonTech.Domain.Result;
 using FonTech.Domain.Settings;
 using FonTech.Producer.Interfaces;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Serilog;
@@ -25,10 +28,11 @@ public class ReportService : IReportService
     private readonly IOptions<RabbitMqSettings> _rabbitMqOptions;
     private readonly IMapper _mapper;
     private readonly ILogger _logger;
+    private readonly IMediator _mediator;
 
     public ReportService(IBaseRepository<Report> reportRepository, IBaseRepository<User> userRepository,
         ILogger logger, IReportValidator reportValidator, IMapper mapper, IMessageProducer messageProducer,
-        IOptions<RabbitMqSettings> rabbitMqOptions)
+        IOptions<RabbitMqSettings> rabbitMqOptions, IMediator mediator)
     {
         _reportRepository = reportRepository;
         _logger = logger;
@@ -36,6 +40,7 @@ public class ReportService : IReportService
         _mapper = mapper;
         _messageProducer = messageProducer;
         _rabbitMqOptions = rabbitMqOptions;
+        _mediator = mediator;
         _userRepository = userRepository;
     }
 
@@ -45,10 +50,7 @@ public class ReportService : IReportService
         ReportDto[] reports;
         try
         {
-            reports = await _reportRepository.GetAll()
-                .Where(x => x.UserId == userId)
-                .Select(x => new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString()))
-                .ToArrayAsync();
+            reports = await _mediator.Send(new GetReportsQuery(userId), new CancellationToken());
         }
         catch (Exception ex)
         {
@@ -78,39 +80,36 @@ public class ReportService : IReportService
     }
 
     /// <inheritdoc />
-    public Task<BaseResult<ReportDto>> GetReportByIdAsync(long id)
+    public async Task<BaseResult<ReportDto>> GetReportByIdAsync(long id)
     {
         ReportDto? report;
         try
         {
-            report = _reportRepository.GetAll()
-                .AsEnumerable()
-                .Select(x => new ReportDto(x.Id, x.Name, x.Description, x.CreatedAt.ToLongDateString()))
-                .FirstOrDefault(x => x.Id == id);
+            report = await _mediator.Send(new GetReportByIdQuery(id));
         }
         catch (Exception ex)
         {
             _logger.Error(ex, ex.Message);
-            return Task.FromResult(new BaseResult<ReportDto>()
+            return new BaseResult<ReportDto>()
             {
                 ErrorMessage = ErrorMessage.InternalServerError,
                 ErrorCode = (int)ErrorCodes.InternalServerError
-            });
+            };
         }
 
         if (report == null)
         {
             _logger.Warning($"Отчёт с {id} не найден", id);
-            return Task.FromResult(new BaseResult<ReportDto>()
+            return new BaseResult<ReportDto>()
             {
                 ErrorMessage = ErrorMessage.ReportNotFound,
                 ErrorCode = (int)ErrorCodes.ReportNotFound
-            });
+            };
         }
-        return Task.FromResult(new BaseResult<ReportDto>()
+        return new BaseResult<ReportDto>()
         {
             Data = report
-        });
+        };
     }
 
     /// <inheritdoc />
@@ -128,14 +127,7 @@ public class ReportService : IReportService
             };
         }
 
-        report = new Report()
-        {
-            Name = dto.Name,
-            Description = dto.Description,
-            UserId = user.Id,
-        };
-        await _reportRepository.CreateAsync(report);
-        await _reportRepository.SaveChangesAsync();
+        await _mediator.Send(new CreateReportCommand(dto.Name, dto.Description, user.Id));
         
         _messageProducer.SendMessage(report, _rabbitMqOptions.Value.RoutingKey, _rabbitMqOptions.Value.ExchangeName);
         

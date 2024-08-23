@@ -1,7 +1,6 @@
 ﻿using System.Text;
 using FonTech.Domain.Settings;
 using FonTech.Producer.Interfaces;
-using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 
