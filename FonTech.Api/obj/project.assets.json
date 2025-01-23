@@ -3871,43 +3871,48 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\leowa\\.nuget\\packages\\": {}
+    "C:\\Users\\leowa\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Программирование\\Проекты\\FonTech\\FonTech.Api\\FonTech.Api.csproj",
+      "projectUniqueName": "C:\\Programming\\Projects\\FonTech\\FonTech.Api\\FonTech.Api.csproj",
       "projectName": "FonTech.Api",
-      "projectPath": "D:\\Программирование\\Проекты\\FonTech\\FonTech.Api\\FonTech.Api.csproj",
+      "projectPath": "C:\\Programming\\Projects\\FonTech\\FonTech.Api\\FonTech.Api.csproj",
       "packagesPath": "C:\\Users\\leowa\\.nuget\\packages\\",
-      "outputPath": "D:\\Программирование\\Проекты\\FonTech\\FonTech.Api\\obj\\",
+      "outputPath": "C:\\Programming\\Projects\\FonTech\\FonTech.Api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\leowa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\leowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://artifactory.dev.deeplay.io/artifactory/api/nuget/v3/trn-nuget-dev/index.json": {},
-        "https://nuget.pkg.github.com/deeplay-io/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Программирование\\Проекты\\FonTech\\FonTech.Application\\FonTech.Application.csproj": {
-              "projectPath": "D:\\Программирование\\Проекты\\FonTech\\FonTech.Application\\FonTech.Application.csproj"
+            "C:\\Programming\\Projects\\FonTech\\FonTech.Application\\FonTech.Application.csproj": {
+              "projectPath": "C:\\Programming\\Projects\\FonTech\\FonTech.Application\\FonTech.Application.csproj"
             },
-            "D:\\Программирование\\Проекты\\FonTech\\FonTech.Consumer\\FonTech.Consumer.csproj": {
-              "projectPath": "D:\\Программирование\\Проекты\\FonTech\\FonTech.Consumer\\FonTech.Consumer.csproj"
+            "C:\\Programming\\Projects\\FonTech\\FonTech.Consumer\\FonTech.Consumer.csproj": {
+              "projectPath": "C:\\Programming\\Projects\\FonTech\\FonTech.Consumer\\FonTech.Consumer.csproj"
             },
-            "D:\\Программирование\\Проекты\\FonTech\\FonTech.DAL\\FonTech.DAL.csproj": {
-              "projectPath": "D:\\Программирование\\Проекты\\FonTech\\FonTech.DAL\\FonTech.DAL.csproj"
+            "C:\\Programming\\Projects\\FonTech\\FonTech.DAL\\FonTech.DAL.csproj": {
+              "projectPath": "C:\\Programming\\Projects\\FonTech\\FonTech.DAL\\FonTech.DAL.csproj"
             },
-            "D:\\Программирование\\Проекты\\FonTech\\FonTech.Producer\\FonTech.Producer.csproj": {
-              "projectPath": "D:\\Программирование\\Проекты\\FonTech\\FonTech.Producer\\FonTech.Producer.csproj"
+            "C:\\Programming\\Projects\\FonTech\\FonTech.Producer\\FonTech.Producer.csproj": {
+              "projectPath": "C:\\Programming\\Projects\\FonTech\\FonTech.Producer\\FonTech.Producer.csproj"
             }
           }
         }
@@ -3916,7 +3921,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -3966,7 +3977,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.106/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
